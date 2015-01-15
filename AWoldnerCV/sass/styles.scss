@@ -10,300 +10,308 @@
 @import "partials/base";
 
 html * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 body {
-    font: {
-        family: $primary-font;
-    }
+font: {
+family: $primary-font;
+}
 
-    color: $primary-color-0;
-    background-color: $background-color;
-    padding: 70px 15px 20px 15px;
+color: $primary-color-0;
+background-color: $background-color;
+padding: 70px 15px 20px 15px;
 }
 
 /* timeline section */
 
 .timeline {
-    list-style: none;
+list-style: none;
 }
 
 .timeline > li {
-    margin-bottom: 60px;
+margin-bottom: 60px;
 }
 
 /* for Desktop */
 @media ( min-width : 640px ) {
-    .timeline > li {
-        overflow: hidden;
-        margin: 0;
-        position: relative;
-    }
+.timeline > li {
+overflow: hidden;
+margin: 0;
+position: relative;
+}
 
-    .timeline-date {
-        width: 110px;
-        float: left;
-        margin-top: 20px;
-    }
+.timeline-date {
+width: 110px;
+float: left;
+margin-top: 20px;
+}
 
-    .timeline-content {
-        width: 75%;
-        float: left;
-        border-left: 3px #e5e5d1 solid;
-        padding-left: 30px;
-    }
+.timeline-content {
+width: 75%;
+float: left;
+border-left: 3px #e5e5d1 solid;
+padding-left: 30px;
+}
 
-    .timeline-content:before {
-        content: '';
-        width: 12px;
-        height: 12px;
-        background: #6fc173;
-        position: absolute;
-        left: 106px;
-        top: 24px;
-        border-radius: 100%;
-    }
+.timeline-content:before {
+content: '';
+width: 12px;
+height: 12px;
+background: #6fc173;
+position: absolute;
+left: 106px;
+top: 24px;
+border-radius: 100%;
+}
 }
 
 /* education section */
 
 .blockquote-box {
-    border-left: 5px solid;
-    border-top: 0px solid;
-    border-right: 0px solid;
-    border-bottom: 0px solid;
-    margin-bottom: 25px;
-    padding: 0px;
-    display: block;
+border-left: 5px solid;
+border-top: 0px solid;
+border-right: 0px solid;
+border-bottom: 0px solid;
+margin-bottom: 25px;
+padding: 0px;
+display: block;
 }
 
-.blockquote-box .blockquote-square {
-    width: 120px;
-    min-height: 50px;
-    margin-right: 22px;
-    text-align: center !important;
-    background-color: #E6E6E6;
-    padding: 20px 0;
-    font-size: 15px;
+.blockquote-box .blockquote-header-container {
 }
 
+.blockquote-box .blockquote-header-container .blockquote-square {
+width: 120px;
+min-height: 50px;
+margin-right: 22px;
+text-align: center !important;
+background-color: #E6E6E6;
+padding: 20px 0;
+font-size: 15px;
+float: left;
 
-.blockquote-box h2 {
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
+@media (max-width: 400px) {
+background-color: red;
+width: 100%;
+}
+}
+
+.blockquote-box .blockquote-header-container .blockquote-header {
+min-height: 50px;
+text-align: left !important;
+/*background-color: #E6E6E6;*/
+padding: 0.5em 0;
+font-size: 24px;
+width: 100%;
+
+@media (max-width: 400px) {
+display: inline-block;
+padding-left: 0.6em;
+padding-top: 0.6em;
+}
 }
 
 .blockquote-box p {
-    padding-left: 1em;
-    padding-top: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
-    margin-bottom: 0px;
+padding-left: 1em;
+padding-top: 1em;
+padding-right: 1em;
+padding-bottom: 1em;
+margin-bottom: 0px;
 }
 
 .blockquote-box.blockquote-1 {
-    border-color: $secondary-color-1;
+border-color: $secondary-color-1;
 }
 
 .blockquote-box.blockquote-1 .blockquote-square {
-    background-color: $secondary-color-1;
-    color: #fff;
+background-color: $secondary-color-1;
+color: #fff;
 }
 
 .blockquote-box.blockquote-box.blockquote-2 {
-    border-color: $secondary-color-3;
+border-color: $secondary-color-3;
 }
 
 .blockquote-box.blockquote-2 .blockquote-square {
-    background-color: $secondary-color-3;
-    color: #fff;
+background-color: $secondary-color-3;
+color: #fff;
 }
 
 .blockquote-box.blockquote-3 {
-    border-color: $secondary-color-5;
+border-color: $secondary-color-5;
 }
 
 .blockquote-box.blockquote-3 .blockquote-square {
-    background-color: $secondary-color-5;
-    color: #fff;
+background-color: $secondary-color-5;
+color: #fff;
 }
 
 .blockquote-box.blockquote-4 {
-    border-color: $secondary-color-7;
+border-color: $secondary-color-7;
 }
 
 .blockquote-box.blockquote-4 .blockquote-square {
-    background-color: $secondary-color-7;
-    color: #fff;
+background-color: $secondary-color-7;
+color: #fff;
 }
-
 /* contact section */
-
 .image-portrait {
-    margin: 10px auto;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: 33% 66%;
-    background-size: 100%;
-    border-radius: 50%;
+margin: 10px auto;
+position: relative;
+width: 300px;
+height: 300px;
+background-repeat: no-repeat;
+background-position: 33% 66%;
+background-size: 100%;
+border-radius: 50%;
 }
 
 #contact-wrapper {
-    //
+//
 }
 
 #contact-wrapper .contact-row {
-    display: inline-block;
-    vertical-align: middle;
-    width: 100%;
-    padding:10px 0;
+display: inline-block;
+vertical-align: middle;
+width: 100%;
+padding: 10px 0;
 }
 
 #contact-wrapper .contact-row .icon-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-    width: 70px;
-    //margin: 0 auto;
+display: inline-block;
+vertical-align: middle;
+width: 70px;
+//margin: 0 auto;
 }
 
 #contact-wrapper .contact-row .value-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 0 auto;
+display: inline-block;
+vertical-align: middle;
+margin: 0 auto;
 }
-
 /* email */
 #contact-wrapper .contact-row div.contact-value {
-    padding: 0 5px;
-    color: $secondary-color-0;
+padding: 0 5px;
+color: $secondary-color-0;
 }
 
 #contact-wrapper .contact-row div.contact-icon {
-    padding: 0 5px;
-    color: $secondary-color-0;
-    text-align: center;
+padding: 0 5px;
+color: $secondary-color-0;
+text-align: center;
 }
-
 /* link icon */
 #information-wrapper {
-    margin: 0 auto;
-    overflow: hidden;
+margin: 0 auto;
+overflow: hidden;
 }
 
 #information-wrapper .information-row {
-    display: inline-block;
-    vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
 
 #information-wrapper .information-row .value-wrapper {
-    display: inline-block;
-    vertical-align: middle;
+display: inline-block;
+vertical-align: middle;
 }
 
 #information-wrapper .information-row .icon-wrapper {
-    display: inline-block;
-    vertical-align: middle;
-    width: 50px;
+display: inline-block;
+vertical-align: middle;
+width: 50px;
 }
-
 /* link */
 #information-wrapper #plushogskolan.information-row div.information-value {
-    padding: 0 5px;
-    float: left;
-    color: $secondary-color-2;
+padding: 0 5px;
+float: left;
+color: $secondary-color-2;
 }
 
 #information-wrapper #plushogskolan.contact-row div.information-icon {
-    padding: 0 5px;
-    float: left;
+padding: 0 5px;
+float: left;
 }
-
 /* icons */
 .social-icon {
-    /*width: 24%;*/
-    width: 32%;
-    text-align: center;
-    color: $secondary-color-2;
+/*width: 24%;*/
+width: 32%;
+text-align: center;
+color: $secondary-color-2;
 }
 
 #contact-name {
-    margin: 15px 25px;
-    font-size: 42px;
-    font-weight: 900;
-    text-align: justify;
-    color: $secondary-color-2;
+margin: 15px 25px;
+font-size: 42px;
+font-weight: 900;
+text-align: justify;
+color: $secondary-color-2;
 }
 
 #contact-comment {
-    text-align: justify;
+text-align: justify;
 }
 
 #contact-name {
-    @media (max-width: $screen-sm-max) {
-        text-align: center;
-    }
+@media (max-width: $screen-sm-max) {
+text-align: center;
+}
 }
 
 table tbody tr.even {
-    background-color: inherit;
+background-color: inherit;
 }
 
 table tbody tr.uneven {
-    background-color: $secondary-color-8;
+background-color: $secondary-color-8;
 }
-
 /* scrolling */
 .section {
-    padding-top: 50px;
-    margin-top: -50px;
-    -webkit-background-clip: content-box;
-    background-clip: content-box;
+padding-top: 50px;
+margin-top: -50px;
+-webkit-background-clip: content-box;
+background-clip: content-box;
 }
-
 /* circle section */
-
 /* -------------------------------------
  * Bar container
  * ------------------------------------- */
 .progress-radial {
-    position: relative;
-    margin: 15px 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 0px solid $circle-background-color; // remove gradient color
-    background-color: $circle-bar-color; // default 100%
+position: relative;
+margin: 15px 0;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 0px solid $circle-background-color; // remove gradient color
+background-color: $circle-bar-color; // default 100%
 }
-
 /* -------------------------------------
  * Optional centered circle w/text
  * ------------------------------------- */
 .progress-radial .progress-overlay {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background-color: $circle-overlay-color;
-    border-radius: 50%;
-    margin-left: 20px;
-    margin-top: 20px;
-    text-align: center;
-    line-height: 60px;
-    font-size: 16px;
+position: absolute;
+width: 60px;
+height: 60px;
+background-color: $circle-overlay-color;
+border-radius: 50%;
+margin-left: 20px;
+margin-top: 20px;
+text-align: center;
+line-height: 60px;
+font-size: 16px;
 }
 
 .progress-radial .progress-label {
-    text-align: left;
-    margin-left: 120px;
-    margin-top: 30px;
-    font-size: 20px;
+text-align: left;
+margin-left: 120px;
+margin-top: 30px;
+font-size: 20px;
 }
 
 .progress-radial {
-    @media (max-width: $screen-xs-max) {
-        margin: 10px 15%;
-    }
+@media (max-width: $screen-xs-max) {
+margin: 10px 15%;
+}
 }

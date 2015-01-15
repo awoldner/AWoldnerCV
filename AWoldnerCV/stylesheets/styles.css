@@ -371,8 +371,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1420661742);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1420661742#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1420661742) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1420661742) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1420661742#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1421308776);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1421308776#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1421308776) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1421308776) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1421308776#glyphicons_halflingsregular) format("svg");
 }
 /* line 21, ../../../../../../../RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.1.0/assets/stylesheets/bootstrap/_glyphicons.scss */
 .glyphicon {
@@ -8153,8 +8153,8 @@ button.close {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(/fonts/font-awesome/fontawesome-webfont.eot?1420661813);
-  src: url(/fonts/font-awesome/fontawesome-webfont.eot?&1420661813#iefix) format("embedded-opentype"), url(/fonts/font-awesome/fontawesome-webfont.woff?1420661813) format("woff"), url(/fonts/font-awesome/fontawesome-webfont.ttf?1420661813) format("truetype"), url(/fonts/font-awesome/fontawesome-webfont.svg?1420661813#fontawesomeregular) format("svg");
+  src: url(/fonts/font-awesome/fontawesome-webfont.eot?1421308776);
+  src: url(/fonts/font-awesome/fontawesome-webfont.eot?&1421308776#iefix) format("embedded-opentype"), url(/fonts/font-awesome/fontawesome-webfont.woff?1421308776) format("woff"), url(/fonts/font-awesome/fontawesome-webfont.ttf?1421308776) format("truetype"), url(/fonts/font-awesome/fontawesome-webfont.svg?1421308776#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -11635,8 +11635,8 @@ body {
   display: block;
 }
 
-/* line 82, ../sass/styles.scss */
-.blockquote-box .blockquote-square {
+/* line 85, ../sass/styles.scss */
+.blockquote-box .blockquote-header-container .blockquote-square {
   width: 120px;
   min-height: 50px;
   margin-right: 22px;
@@ -11644,15 +11644,35 @@ body {
   background-color: #E6E6E6;
   padding: 20px 0;
   font-size: 15px;
+  float: left;
+}
+@media (max-width: 400px) {
+  /* line 85, ../sass/styles.scss */
+  .blockquote-box .blockquote-header-container .blockquote-square {
+    background-color: red;
+    width: 100%;
+  }
 }
 
-/* line 93, ../sass/styles.scss */
-.blockquote-box h2 {
-  padding-top: 0.4em;
-  padding-bottom: 0.2em;
+/* line 101, ../sass/styles.scss */
+.blockquote-box .blockquote-header-container .blockquote-header {
+  min-height: 50px;
+  text-align: left !important;
+  /*background-color: #E6E6E6;*/
+  padding: 0.5em 0;
+  font-size: 24px;
+  width: 100%;
+}
+@media (max-width: 400px) {
+  /* line 101, ../sass/styles.scss */
+  .blockquote-box .blockquote-header-container .blockquote-header {
+    display: inline-block;
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+  }
 }
 
-/* line 98, ../sass/styles.scss */
+/* line 116, ../sass/styles.scss */
 .blockquote-box p {
   padding-left: 1em;
   padding-top: 1em;
@@ -11661,52 +11681,52 @@ body {
   margin-bottom: 0px;
 }
 
-/* line 106, ../sass/styles.scss */
+/* line 124, ../sass/styles.scss */
 .blockquote-box.blockquote-1 {
   border-color: #7c8ca0;
 }
 
-/* line 110, ../sass/styles.scss */
+/* line 128, ../sass/styles.scss */
 .blockquote-box.blockquote-1 .blockquote-square {
   background-color: #7c8ca0;
   color: #fff;
 }
 
-/* line 115, ../sass/styles.scss */
+/* line 133, ../sass/styles.scss */
 .blockquote-box.blockquote-box.blockquote-2 {
   border-color: #9da9b8;
 }
 
-/* line 119, ../sass/styles.scss */
+/* line 137, ../sass/styles.scss */
 .blockquote-box.blockquote-2 .blockquote-square {
   background-color: #9da9b8;
   color: #fff;
 }
 
-/* line 124, ../sass/styles.scss */
+/* line 142, ../sass/styles.scss */
 .blockquote-box.blockquote-3 {
   border-color: #bdc5cf;
 }
 
-/* line 128, ../sass/styles.scss */
+/* line 146, ../sass/styles.scss */
 .blockquote-box.blockquote-3 .blockquote-square {
   background-color: #bdc5cf;
   color: #fff;
 }
 
-/* line 133, ../sass/styles.scss */
+/* line 151, ../sass/styles.scss */
 .blockquote-box.blockquote-4 {
   border-color: #dee2e7;
 }
 
-/* line 137, ../sass/styles.scss */
+/* line 155, ../sass/styles.scss */
 .blockquote-box.blockquote-4 .blockquote-square {
   background-color: #dee2e7;
   color: #fff;
 }
 
 /* contact section */
-/* line 144, ../sass/styles.scss */
+/* line 160, ../sass/styles.scss */
 .image-portrait {
   margin: 10px auto;
   position: relative;
@@ -11718,7 +11738,7 @@ body {
   border-radius: 50%;
 }
 
-/* line 159, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 #contact-wrapper .contact-row {
   display: inline-block;
   vertical-align: middle;
@@ -11726,14 +11746,14 @@ body {
   padding: 10px 0;
 }
 
-/* line 166, ../sass/styles.scss */
+/* line 182, ../sass/styles.scss */
 #contact-wrapper .contact-row .icon-wrapper {
   display: inline-block;
   vertical-align: middle;
   width: 70px;
 }
 
-/* line 173, ../sass/styles.scss */
+/* line 189, ../sass/styles.scss */
 #contact-wrapper .contact-row .value-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -11741,13 +11761,13 @@ body {
 }
 
 /* email */
-/* line 180, ../sass/styles.scss */
+/* line 195, ../sass/styles.scss */
 #contact-wrapper .contact-row div.contact-value {
   padding: 0 5px;
   color: #6c7e94;
 }
 
-/* line 185, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 #contact-wrapper .contact-row div.contact-icon {
   padding: 0 5px;
   color: #6c7e94;
@@ -11755,25 +11775,25 @@ body {
 }
 
 /* link icon */
-/* line 192, ../sass/styles.scss */
+/* line 206, ../sass/styles.scss */
 #information-wrapper {
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* line 197, ../sass/styles.scss */
+/* line 211, ../sass/styles.scss */
 #information-wrapper .information-row {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 202, ../sass/styles.scss */
+/* line 216, ../sass/styles.scss */
 #information-wrapper .information-row .value-wrapper {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 207, ../sass/styles.scss */
+/* line 221, ../sass/styles.scss */
 #information-wrapper .information-row .icon-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -11781,21 +11801,21 @@ body {
 }
 
 /* link */
-/* line 214, ../sass/styles.scss */
+/* line 227, ../sass/styles.scss */
 #information-wrapper #plushogskolan.information-row div.information-value {
   padding: 0 5px;
   float: left;
   color: #8c9aac;
 }
 
-/* line 220, ../sass/styles.scss */
+/* line 233, ../sass/styles.scss */
 #information-wrapper #plushogskolan.contact-row div.information-icon {
   padding: 0 5px;
   float: left;
 }
 
 /* icons */
-/* line 226, ../sass/styles.scss */
+/* line 238, ../sass/styles.scss */
 .social-icon {
   /*width: 24%;*/
   width: 32%;
@@ -11803,7 +11823,7 @@ body {
   color: #8c9aac;
 }
 
-/* line 233, ../sass/styles.scss */
+/* line 245, ../sass/styles.scss */
 #contact-name {
   margin: 15px 25px;
   font-size: 42px;
@@ -11812,30 +11832,30 @@ body {
   color: #8c9aac;
 }
 
-/* line 241, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
 #contact-comment {
   text-align: justify;
 }
 
 @media (max-width: 991px) {
-  /* line 245, ../sass/styles.scss */
+  /* line 257, ../sass/styles.scss */
   #contact-name {
     text-align: center;
   }
 }
 
-/* line 251, ../sass/styles.scss */
+/* line 263, ../sass/styles.scss */
 table tbody tr.even {
   background-color: inherit;
 }
 
-/* line 255, ../sass/styles.scss */
+/* line 267, ../sass/styles.scss */
 table tbody tr.uneven {
   background-color: #eef0f3;
 }
 
 /* scrolling */
-/* line 260, ../sass/styles.scss */
+/* line 271, ../sass/styles.scss */
 .section {
   padding-top: 50px;
   margin-top: -50px;
@@ -11847,7 +11867,7 @@ table tbody tr.uneven {
 /* -------------------------------------
  * Bar container
  * ------------------------------------- */
-/* line 272, ../sass/styles.scss */
+/* line 281, ../sass/styles.scss */
 .progress-radial {
   position: relative;
   margin: 15px 0;
@@ -11861,7 +11881,7 @@ table tbody tr.uneven {
 /* -------------------------------------
  * Optional centered circle w/text
  * ------------------------------------- */
-/* line 285, ../sass/styles.scss */
+/* line 293, ../sass/styles.scss */
 .progress-radial .progress-overlay {
   position: absolute;
   width: 60px;
@@ -11875,7 +11895,7 @@ table tbody tr.uneven {
   font-size: 16px;
 }
 
-/* line 298, ../sass/styles.scss */
+/* line 306, ../sass/styles.scss */
 .progress-radial .progress-label {
   text-align: left;
   margin-left: 120px;
@@ -11884,7 +11904,7 @@ table tbody tr.uneven {
 }
 
 @media (max-width: 767px) {
-  /* line 305, ../sass/styles.scss */
+  /* line 313, ../sass/styles.scss */
   .progress-radial {
     margin: 10px 15%;
   }
