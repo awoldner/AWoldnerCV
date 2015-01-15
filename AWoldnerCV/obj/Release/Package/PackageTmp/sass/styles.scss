@@ -79,7 +79,10 @@ body {
     display: block;
 }
 
-.blockquote-box .blockquote-square {
+.blockquote-box .blockquote-header-container {
+}
+
+.blockquote-box .blockquote-header-container .blockquote-square {
     width: 120px;
     min-height: 50px;
     margin-right: 22px;
@@ -87,12 +90,27 @@ body {
     background-color: #E6E6E6;
     padding: 20px 0;
     font-size: 15px;
+    float: left;
+
+    @media (max-width: 400px) {
+        background-color: red;
+        width: 100%;
+    }
 }
 
+.blockquote-box .blockquote-header-container .blockquote-header {
+    min-height: 50px;
+    text-align: left !important;
+    /*background-color: #E6E6E6;*/
+    padding: 0.5em 0;
+    font-size: 24px;
+    width: 100%;
 
-.blockquote-box h2 {
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
+    @media (max-width: 400px) {
+        display: inline-block;
+        padding-left: 0.6em;
+        padding-top: 0.6em;
+    }
 }
 
 .blockquote-box p {
@@ -138,9 +156,7 @@ body {
     background-color: $secondary-color-7;
     color: #fff;
 }
-
 /* contact section */
-
 .image-portrait {
     margin: 10px auto;
     position: relative;
@@ -160,7 +176,7 @@ body {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
-    padding:10px 0;
+    padding: 10px 0;
 }
 
 #contact-wrapper .contact-row .icon-wrapper {
@@ -175,7 +191,6 @@ body {
     vertical-align: middle;
     margin: 0 auto;
 }
-
 /* email */
 #contact-wrapper .contact-row div.contact-value {
     padding: 0 5px;
@@ -187,7 +202,6 @@ body {
     color: $secondary-color-0;
     text-align: center;
 }
-
 /* link icon */
 #information-wrapper {
     margin: 0 auto;
@@ -209,7 +223,6 @@ body {
     vertical-align: middle;
     width: 50px;
 }
-
 /* link */
 #information-wrapper #plushogskolan.information-row div.information-value {
     padding: 0 5px;
@@ -221,7 +234,6 @@ body {
     padding: 0 5px;
     float: left;
 }
-
 /* icons */
 .social-icon {
     /*width: 24%;*/
@@ -255,7 +267,6 @@ table tbody tr.even {
 table tbody tr.uneven {
     background-color: $secondary-color-8;
 }
-
 /* scrolling */
 .section {
     padding-top: 50px;
@@ -263,9 +274,7 @@ table tbody tr.uneven {
     -webkit-background-clip: content-box;
     background-clip: content-box;
 }
-
 /* circle section */
-
 /* -------------------------------------
  * Bar container
  * ------------------------------------- */
@@ -278,7 +287,6 @@ table tbody tr.uneven {
     border: 0px solid $circle-background-color; // remove gradient color
     background-color: $circle-bar-color; // default 100%
 }
-
 /* -------------------------------------
  * Optional centered circle w/text
  * ------------------------------------- */

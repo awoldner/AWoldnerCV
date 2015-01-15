@@ -176,7 +176,6 @@
     <Content Include="fonts\font-awesome\fontawesome-webfont.ttf" />
     <Content Include="fonts\font-awesome\fontawesome-webfont.woff" />
     <Content Include="config.rb" />
-    <None Include="Properties\PublishProfiles\woldnercv.pubxml" />
     <Content Include="sass\partials\_bootstrap-variables.scss" />
     <Content Include="sass\modules\_radial-progress.scss" />
     <Content Include="sass\partials\_base.scss" />
@@ -184,6 +183,7 @@
     <Content Include="sass\styles.scss" />
     <Content Include="sass\modules\_all.scss" />
     <Content Include="sass\modules\_timeline.scss" />
+    <None Include="Properties\PublishProfiles\woldnercv.pubxml" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <Content Include="Scripts\bootstrap-sprockets.js" />
     <Content Include="Scripts\bootstrap.js" />
