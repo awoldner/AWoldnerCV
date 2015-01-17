@@ -172,18 +172,19 @@ body {
     //
 }
 
+
 #contact-wrapper .contact-row {
     display: inline-block;
     vertical-align: middle;
     width: 100%;
     padding: 10px 0;
+    min-height: 70px;
 }
 
 #contact-wrapper .contact-row .icon-wrapper {
     display: inline-block;
     vertical-align: middle;
     width: 70px;
-    //margin: 0 auto;
 }
 
 #contact-wrapper .contact-row .value-wrapper {
@@ -191,6 +192,12 @@ body {
     vertical-align: middle;
     margin: 0 auto;
 }
+
+#contact-wrapper .contact-row .download-wrapper {
+    float:right;
+    padding: 10px 20px;
+}
+
 /* email */
 #contact-wrapper .contact-row div.contact-value {
     padding: 0 5px;
@@ -202,6 +209,7 @@ body {
     color: $secondary-color-0;
     text-align: center;
 }
+
 /* link icon */
 #information-wrapper {
     margin: 0 auto;
@@ -242,6 +250,18 @@ body {
     color: $secondary-color-2;
 }
 
+.fa-facebook-square.social-icon {
+    color: #3c579a;
+}
+
+.fa-linkedin-square.social-icon {
+    color: #007ab5;
+}
+
+.fa-github-square.social-icon {
+    color: #672a80;
+}
+
 #contact-name {
     margin: 15px 25px;
     font-size: 42px;
@@ -257,6 +277,7 @@ body {
 #contact-name {
     @media (max-width: $screen-sm-max) {
         text-align: center;
+        margin: 0;
     }
 }
 

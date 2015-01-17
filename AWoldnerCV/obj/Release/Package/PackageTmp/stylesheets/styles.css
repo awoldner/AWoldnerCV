@@ -11738,36 +11738,43 @@ body {
   border-radius: 50%;
 }
 
-/* line 175, ../sass/styles.scss */
+/* line 176, ../sass/styles.scss */
 #contact-wrapper .contact-row {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
   padding: 10px 0;
+  min-height: 70px;
 }
 
-/* line 182, ../sass/styles.scss */
+/* line 184, ../sass/styles.scss */
 #contact-wrapper .contact-row .icon-wrapper {
   display: inline-block;
   vertical-align: middle;
   width: 70px;
 }
 
-/* line 189, ../sass/styles.scss */
+/* line 190, ../sass/styles.scss */
 #contact-wrapper .contact-row .value-wrapper {
   display: inline-block;
   vertical-align: middle;
   margin: 0 auto;
 }
 
+/* line 196, ../sass/styles.scss */
+#contact-wrapper .contact-row .download-wrapper {
+  float: right;
+  padding: 10px 20px;
+}
+
 /* email */
-/* line 195, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 #contact-wrapper .contact-row div.contact-value {
   padding: 0 5px;
   color: #6c7e94;
 }
 
-/* line 200, ../sass/styles.scss */
+/* line 207, ../sass/styles.scss */
 #contact-wrapper .contact-row div.contact-icon {
   padding: 0 5px;
   color: #6c7e94;
@@ -11775,25 +11782,25 @@ body {
 }
 
 /* link icon */
-/* line 206, ../sass/styles.scss */
+/* line 214, ../sass/styles.scss */
 #information-wrapper {
   margin: 0 auto;
   overflow: hidden;
 }
 
-/* line 211, ../sass/styles.scss */
+/* line 219, ../sass/styles.scss */
 #information-wrapper .information-row {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 216, ../sass/styles.scss */
+/* line 224, ../sass/styles.scss */
 #information-wrapper .information-row .value-wrapper {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 221, ../sass/styles.scss */
+/* line 229, ../sass/styles.scss */
 #information-wrapper .information-row .icon-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -11801,21 +11808,21 @@ body {
 }
 
 /* link */
-/* line 227, ../sass/styles.scss */
+/* line 235, ../sass/styles.scss */
 #information-wrapper #plushogskolan.information-row div.information-value {
   padding: 0 5px;
   float: left;
   color: #8c9aac;
 }
 
-/* line 233, ../sass/styles.scss */
+/* line 241, ../sass/styles.scss */
 #information-wrapper #plushogskolan.contact-row div.information-icon {
   padding: 0 5px;
   float: left;
 }
 
 /* icons */
-/* line 238, ../sass/styles.scss */
+/* line 246, ../sass/styles.scss */
 .social-icon {
   /*width: 24%;*/
   width: 32%;
@@ -11823,7 +11830,22 @@ body {
   color: #8c9aac;
 }
 
-/* line 245, ../sass/styles.scss */
+/* line 253, ../sass/styles.scss */
+.fa-facebook-square.social-icon {
+  color: #3c579a;
+}
+
+/* line 257, ../sass/styles.scss */
+.fa-linkedin-square.social-icon {
+  color: #007ab5;
+}
+
+/* line 261, ../sass/styles.scss */
+.fa-github-square.social-icon {
+  color: #672a80;
+}
+
+/* line 265, ../sass/styles.scss */
 #contact-name {
   margin: 15px 25px;
   font-size: 42px;
@@ -11832,30 +11854,31 @@ body {
   color: #8c9aac;
 }
 
-/* line 253, ../sass/styles.scss */
+/* line 273, ../sass/styles.scss */
 #contact-comment {
   text-align: justify;
 }
 
 @media (max-width: 991px) {
-  /* line 257, ../sass/styles.scss */
+  /* line 277, ../sass/styles.scss */
   #contact-name {
     text-align: center;
+    margin: 0;
   }
 }
 
-/* line 263, ../sass/styles.scss */
+/* line 284, ../sass/styles.scss */
 table tbody tr.even {
   background-color: inherit;
 }
 
-/* line 267, ../sass/styles.scss */
+/* line 288, ../sass/styles.scss */
 table tbody tr.uneven {
   background-color: #eef0f3;
 }
 
 /* scrolling */
-/* line 271, ../sass/styles.scss */
+/* line 292, ../sass/styles.scss */
 .section {
   padding-top: 50px;
   margin-top: -50px;
@@ -11867,7 +11890,7 @@ table tbody tr.uneven {
 /* -------------------------------------
  * Bar container
  * ------------------------------------- */
-/* line 281, ../sass/styles.scss */
+/* line 302, ../sass/styles.scss */
 .progress-radial {
   position: relative;
   margin: 15px 0;
@@ -11881,7 +11904,7 @@ table tbody tr.uneven {
 /* -------------------------------------
  * Optional centered circle w/text
  * ------------------------------------- */
-/* line 293, ../sass/styles.scss */
+/* line 314, ../sass/styles.scss */
 .progress-radial .progress-overlay {
   position: absolute;
   width: 60px;
@@ -11895,7 +11918,7 @@ table tbody tr.uneven {
   font-size: 16px;
 }
 
-/* line 306, ../sass/styles.scss */
+/* line 327, ../sass/styles.scss */
 .progress-radial .progress-label {
   text-align: left;
   margin-left: 120px;
@@ -11904,7 +11927,7 @@ table tbody tr.uneven {
 }
 
 @media (max-width: 767px) {
-  /* line 313, ../sass/styles.scss */
+  /* line 334, ../sass/styles.scss */
   .progress-radial {
     margin: 10px 15%;
   }
